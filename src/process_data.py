@@ -84,6 +84,6 @@ if __name__ == "__main__":
     df_new = normalize(df_new, "quantityordered")
     df_new = normalize(df_new, "sales")
     logging.info("Upload data")
-    # upload_data(df_new, main_client, "new-repo", "dev", "data/sales_transformed.csv")
+    upload_data(df_new, main_client, "new-repo", "dev", "data/sales_transformed.csv")
     logging.info("Create new commit")
-    # create_commit(main_client, "new-repo", "dev", "Transform sales, revenue")
+    create_commit(main_client, "new-repo", "dev", "Transform sales, revenue")
